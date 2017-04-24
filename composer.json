@@ -4,7 +4,7 @@
     "description": "Small PHP client library for geo api fr",
     "license": "MIT",
     "minimum-stability": "stable",
-    "keywords": ["geo", "api", "france", "regions", "departements", "communes"],
+    "keywords": ["geo", "api", "france", "regions", "departements", "communes", "ayctor"],
     "homepage": "https://github.com/Ayctor/GeoApiFr",
     "authors": [
         {
