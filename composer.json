@@ -4,19 +4,25 @@
     "description": "Small PHP client library for geo api fr",
     "license": "MIT",
     "minimum-stability": "stable",
+    "keywords": ["geo", "api", "france", "regions", "departements", "communes"],
+    "homepage": "https://github.com/Ayctor/GeoApiFr",
     "authors": [
         {
             "name": "Damien Couteillou",
             "email": "damien@ayctor.com"
         }
     ],
+    "support": {
+        "issues": "https://github.com/Ayctor/GeoApiFr/issues",
+        "source": "https://github.com/Ayctor/GeoApiFr/tree/master"
+    },
     "autoload": {
         "psr-4": {
             "GeoApiFr\\": "src/"
         }
     },
     "require": {
-        "php": ">=5.3.0",
+        "php": ">=7.0.0",
         "guzzlehttp/guzzle": "^6.2"
     },
     "require-dev": {

@@ -2,7 +2,13 @@
 
 It is a small php client library to use the [GéoAPI](https://api.gouv.fr/api/geoapi.html).
 
-See official documentation for usage : [documentation](https://docs.geo.api.gouv.fr/)
+See [official documentation](https://docs.geo.api.gouv.fr/) for availables methods.
+
+### Instalation
+
+```
+composer require ayctor/geoapifr
+```
 
 ### Usage 
 
@@ -10,15 +16,19 @@ See official documentation for usage : [documentation](https://docs.geo.api.gouv
 ```php
 use GeoApiFr\GeoApiFr;
 
+// Create instance
+
 $instance = new GeoApiFr;
 
 $regions = $instance->get('regions');
 
-$versailles = $instance->get('communes', ['nom' => 'versailles'])
+// OR
+
+$versailles = GeoApiFr::getInstance()->get('communes', ['nom' => 'versailles']);
 ```
 
 ### Errors
 
-It will return an empty array if the request with no params came up empty.
+It will return an empty array if the request came up empty.
 
-Return full error object if error 400.
+Return ```GuzzleHttp\Exception\RequestException``` object if error 400.
