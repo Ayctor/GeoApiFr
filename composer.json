@@ -1,5 +1,5 @@
 {
-    "version": "0.0.1",
+    "version": "0.0.2",
     "name": "ayctor/geoapifr",
     "description": "Small PHP client library for geo api fr",
     "license": "MIT",
