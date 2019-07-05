@@ -56,11 +56,7 @@ class GeoApiFr
      */
     public function get($method, $args = [])
     {
-        try {
-            $res = $this->client->request('GET', $method, ['query' => $args]);
-        } catch (RequestException $e) {
-            $res = $e->getResponse();
-        }
+        $res = $this->client->request('GET', $method, ['query' => $args]);
 
         if ($res->getStatusCode() == 200) {
             return json_decode($res->getBody());
